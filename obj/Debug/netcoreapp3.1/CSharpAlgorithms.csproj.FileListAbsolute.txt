@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.exe
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.deps.json
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.runtimeconfig.json
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.runtimeconfig.dev.json
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.dll
+C:\Users\hp\source\repos\CSharpAlgorithms\bin\Debug\netcoreapp3.1\CSharpAlgorithms.pdb
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.AssemblyInfo.cs
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.dll
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.pdb
+C:\Users\hp\source\repos\CSharpAlgorithms\obj\Debug\netcoreapp3.1\CSharpAlgorithms.genruntimeconfig.cache
