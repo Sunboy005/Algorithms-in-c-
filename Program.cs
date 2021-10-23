@@ -71,6 +71,13 @@ namespace CSharpAlgorithms
                 Console.WriteLine(chara);
             }
 
+            List<int> points = new List<int> { 5, 10, 5, 20, 30, 30, 40, 50, 60, 70 };
+            IEnumerable<int> res=points.AsQueryable().Distinct();
+            foreach(int nexted in res)
+            {
+                Console.WriteLine(nexted);
+            }
+
 
             //IQueryable<char> res = chars.AsQueryable().Reverse();
             //Console.Write("\nReversed String = ");
