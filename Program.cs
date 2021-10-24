@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Collections.Immutable;
+using System.Linq;
 
 namespace CSharpAlgorithms
 {
@@ -67,24 +66,34 @@ namespace CSharpAlgorithms
             }
             string herm = "Hello";
             string[] grease = herm.Split();
-            foreach (string chara in grease) {
+            foreach (string chara in grease)
+            {
                 Console.WriteLine(chara);
             }
+            Console.WriteLine("Working with List  (Distinct)");//Spacing Each Solution
 
             List<int> points = new List<int> { 5, 10, 5, 20, 30, 30, 40, 50, 60, 70 };
-            IEnumerable<int> res=points.AsQueryable().Distinct();
-            foreach(int nexted in res)
+            IEnumerable<int> res = points.AsQueryable().Distinct();
+            foreach (int nexted in res)
             {
                 Console.WriteLine(nexted);
             }
+            Console.WriteLine("Working with List (WHERE)");//Spacing Each Solution
+
+            IEnumerable<int> Amy = points.AsQueryable().Where((n, index) => n <= 50);
+            foreach (int st in Amy)
+            {
+                Console.WriteLine(st);
+            }
 
 
-            //IQueryable<char> res = chars.AsQueryable().Reverse();
-            //Console.Write("\nReversed String = ");
-            //foreach (char chara in res)
-            //{
-            //    Console.Write(chara);
-            //}
+            char[] charit = new char[] { 'm', 'e', 'r', 'c', 'y' };
+            IEnumerable<char> resu= charit.AsQueryable().Reverse();
+            Console.Write("\nReversed String = ");
+            foreach (char chara in resu)
+            {
+                Console.Write(chara);
+            }
             //Console.WriteLine($"The maximum number using Num.max() is {Array.Reverse(numberArr)}");//
             //Console.WriteLine($"The maximum number using Num.max() is {Array.Reverse()}");//
             //Console.WriteLine($"The maximum number using Num.max() is {numberArr.Sum()}");//
