@@ -58,7 +58,8 @@ namespace CSharpAlgorithms
             {
                 Console.Write(chara);
             }
-            Console.WriteLine("Inserting a value in an Array");//Spacing Each Solution
+            Console.WriteLine("||||||||||||||||||||||||");//Spacing Each Solution
+            Console.WriteLine("Inserting a value in an Array");
             int n= 10;
             int[] x = new int[n];
             for (int i=0; i<n; i++)
@@ -114,6 +115,38 @@ namespace CSharpAlgorithms
             //Console.WriteLine($"The maximum number using Num.max() is {numberArr.Average()}");//
 
             Console.WriteLine("");
+
+
+            List<string> stringList = new List<string>() { "Preety", "Tiwary", "Agrawal", "Priyanka", "Dewangan" };
+            Console.WriteLine("Before Reverse the Data");
+            foreach (var name in stringList)
+            {
+                Console.Write(name + " ");
+            }
+            Console.WriteLine();
+            IEnumerable<string> ReverseData1 = stringList.AsEnumerable().Reverse();
+            IQueryable<string> ReverseData2 = stringList.AsQueryable().Reverse();
+            Console.WriteLine("After Reverse the Data");
+            foreach (var name in ReverseData2)
+            {
+                Console.Write(name + " ");
+            }
+
+            Console.WriteLine("#####################");
+            List<int> integerList = new List<int>()
+            {
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+            };
+            //LINQ Query using Query Syntax
+            var QuerySyntax = from obj in integerList
+                              where obj > 5
+                              select obj;
+            //Execution
+            foreach (var item in QuerySyntax)
+            {
+                Console.Write(item + " ");
+            }
+
         }
     }
 }
