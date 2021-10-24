@@ -58,6 +58,19 @@ namespace CSharpAlgorithms
             {
                 Console.Write(chara);
             }
+            Console.WriteLine("Inserting a value in an Array");//Spacing Each Solution
+            int n= 10;
+            int[] x = new int[n];
+            for (int i=0; i<n; i++)
+            {
+                x[i] = i * 10;
+            }
+            foreach(int P in x)
+            {
+                Console.WriteLine(P);
+            }
+
+
             Console.WriteLine("");
             IQueryable<char> answ = chars.AsQueryable().Reverse();
             foreach (char str in answ)
@@ -86,7 +99,7 @@ namespace CSharpAlgorithms
                 Console.WriteLine(st);
             }
 
-
+            Console.WriteLine("Working with List (Reverse)");//Spacing Each Solution
             char[] charit = new char[] { 'm', 'e', 'r', 'c', 'y' };
             IEnumerable<char> resu= charit.AsQueryable().Reverse();
             Console.Write("\nReversed String = ");
@@ -94,6 +107,7 @@ namespace CSharpAlgorithms
             {
                 Console.Write(chara);
             }
+
             //Console.WriteLine($"The maximum number using Num.max() is {Array.Reverse(numberArr)}");//
             //Console.WriteLine($"The maximum number using Num.max() is {Array.Reverse()}");//
             //Console.WriteLine($"The maximum number using Num.max() is {numberArr.Sum()}");//
