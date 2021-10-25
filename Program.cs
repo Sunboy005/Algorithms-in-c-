@@ -10,9 +10,9 @@ namespace CSharpAlgorithms
         {
             //Declaring an array
             int[] newArr = new int[] { 2, 3, 4, 5 };
-            foreach (int num in newArr)
+            foreach (int nume in newArr)
             {
-                Console.WriteLine(num);//Outputting each member of an Array
+                Console.WriteLine(nume);//Outputting each member of an Array
             }
             Console.WriteLine("##################");//Spacing Each Solution
 
@@ -21,9 +21,9 @@ namespace CSharpAlgorithms
             int b = 4;
             int c = 6;
             int[] arrNew = new int[] { a, b, c };
-            foreach (int num in arrNew)
+            foreach (int nume in arrNew)
             {
-                Console.WriteLine(num);//Outputting each member of an Array
+                Console.WriteLine(nume);//Outputting each member of an Array
             }
 
             Console.WriteLine("##################");//Spacing Each Solution
@@ -31,11 +31,10 @@ namespace CSharpAlgorithms
             Console.WriteLine("Using Linq given: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]");
 
             int[] numberArr = new int[] { 9, 6, 5, 1, 2, 7, 4, 8, 3, 0 };
-            Console.WriteLine($"The maximum number using Num.Max() is {numberArr.Max()}");//
+            Console.WriteLine($"The Maximum number using Num.Max() is {numberArr.Max()}");//
             Console.WriteLine($"The Minimum number using Num.Min() is {numberArr.Min()}");//
-            //Console.WriteLine($"The maximum number using Num.max() is {numberArr.Reverse()}");//
-            Console.WriteLine($"The maximum number using Num.Sum() is {numberArr.Sum()}");//
-            Console.WriteLine($"The maximum number using Num.Average() is {numberArr.Average()}");//
+            Console.WriteLine($"The Sum of number using Num.Sum() is {numberArr.Sum()}");//
+            Console.WriteLine($"The Average of numbers using Num.Average() is {numberArr.Average()}");//
 
             Console.WriteLine("##################");//Spacing Each Solution
             Console.WriteLine("Sorting an Array requires outputting an array");//Spacing Each Solution
@@ -50,31 +49,32 @@ namespace CSharpAlgorithms
                 Console.Write(reversed);
             }
             Console.WriteLine("");
-            //string str = "Hello";
-            //char[] chars = str.ToCharArray();
-            char[] chars = { 't', 'i', 'm', 'e' };
+            string str = "Hello";
+            char[] chars = str.ToCharArray();
+            //char[] chars = { 't', 'i', 'm', 'e' };
             Array.Reverse(chars);
             foreach (char chara in chars)
             {
                 Console.Write(chara);
             }
+            Console.WriteLine("");
             Console.WriteLine("||||||||||||||||||||||||");//Spacing Each Solution
             Console.WriteLine("Inserting a value in an Array");
-            int n= 10;
+            int n = 10;
             int[] x = new int[n];
-            for (int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 x[i] = i * 10;
             }
-            foreach(int P in x)
+            foreach (int p in x)
             {
-                Console.WriteLine(P);
+                Console.WriteLine(p);
             }
 
 
             Console.WriteLine("");
             IQueryable<char> answ = chars.AsQueryable().Reverse();
-            foreach (char str in answ)
+            foreach (char st in answ)
             {
                 Console.Write(str);
             }
@@ -102,7 +102,7 @@ namespace CSharpAlgorithms
 
             Console.WriteLine("Working with List (Reverse)");//Spacing Each Solution
             char[] charit = new char[] { 'm', 'e', 'r', 'c', 'y' };
-            IEnumerable<char> resu= charit.AsQueryable().Reverse();
+            IEnumerable<char> resu = charit.AsQueryable().Reverse();
             Console.Write("\nReversed String = ");
             foreach (char chara in resu)
             {
@@ -146,7 +146,21 @@ namespace CSharpAlgorithms
             {
                 Console.Write(item + " ");
             }
-
+            Console.WriteLine(" ");
+            string num1 = "10";
+            int num = Int32.Parse(num1);
+            int[] ray = new int[num];
+            int[] ray2 = new int[num];
+            for (int i = 0; i < num; i++)
+            {
+                ray[i] = i * 4;
+            }
+            Array.Reverse(ray);
+            foreach (var aray in ray)
+            {
+                Console.Write($"{aray}, ");
+            }
+            Console.WriteLine(" ");
         }
     }
 }
